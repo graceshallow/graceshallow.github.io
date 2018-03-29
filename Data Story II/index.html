@@ -1,0 +1,166 @@
+<head>
+	<title>Grace Shallow's Data Story II</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+	<style>
+		
+		/*FONTS*/
+
+		@font-face {
+			font-family: "Keep Calm";
+			src:url(fonts/KeepCalm-Medium.ttf); 
+		}
+
+		@font-face {
+
+			font-family:"Code";
+			src:url(fonts/CODE Bold.otf);
+		}
+
+		@font-face {
+			font-family:"RobotoMedium-Italic";
+			src:url(fonts/Roboto-MediumItalic.ttf);
+		}		
+
+		@font-face {
+			font-family:"Roboto-Italic";
+			src:url(fonts/Roboto-Italic.ttf); 
+		}
+
+		/*TOP BOX*/
+
+
+		h1 {
+			font-family: "Keep Calm","Helvetica","Arial",sans-serif;
+			src:url(fonts/KeepCalm-Medium.ttf); 
+		}
+
+		p {
+			font-family:"Code","Helvetica","Arial",sans-serif;
+			src:url(fonts/CODE Bold.otf);
+		}
+
+		h2 {
+			font-family: "Keep Calm","Helvetica","Arial",sans-serif;
+		}
+
+
+		h3 {
+			font-family: "Keep Calm","Helvetica","Arial",sans-serif;
+			src:url(fonts/KeepCalm-Medium.ttf);
+		}
+
+
+		h4 {
+			font-family: "Keep Calm","Helvetica","Arial",sans-serif;
+			src:url(fonts/KeepCalm-Medium.ttf);
+		}
+
+		/*MIDDLE BOX*/
+
+	#container {
+		max-width:70%;
+		margin:20 auto;
+	}
+
+		.left {
+			float:left;
+			width:30%;
+		}
+
+		.right {
+			float:left;
+			width:60%;
+			margin-left:5%;
+			margin-right:5%;
+			margin-top:3%; 
+			margin-top:3%;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="top">
+			<h1><center>HOW WELL DO U.S. NEWSPAPERS REPRESENT THEIR CITIES?</center></h1>
+			<h3><center>See the breakdown of racial demographics in the newsrooms of the papers covering America's six biggest cities.</center></h3>
+			<h4><center>By Grace Shallow</center></h4>
+			<p>The annual Newsroom Diversity Survey from the American Society of News Editors found that in 2017, diversity decreased in American newsrooms from the year prior. But since 2001, news publications in the United States have gained racial diversity by 44 percent.<br>
+			<br>Despite industry-wide progress over the last 16 years, representation at each of the six biggest U.S. cities' papers varies — and is sometimes scarily different from the demographics of the city it covers.</p>
+			<h2>METHOD</h2>
+			<p>The six most-populated U.S. cities, from biggest to smallest, are:<br></p>
+			<canvas id="myChart"></canvas>	
+			<br><p>To determine how well each paper represents the people living in the city that it covers, I gathered the breakdown of demographics at each of the cities' primary newspapers and compared those to the actual demographics of the cities' residents. That way, I was able to tell which groups were "overrepresented" or "underrepresented." In other words, the percentage of a certain race or gender working in a newsroom was either higher or lower than the percentage of that group living in the city itself.</p>
+		
+			<script>
+				var chart = new Chart(document.getElementById("myChart"),{
+					type:"horizontalBar",
+
+					data: {
+						
+						labels: ["New York Times", "Los Angeles Times", "Chicago Tribune", "Houston Chronicle", "The Arizona Republic", "The Philadelphia Inquirer"],
+						
+						datasets: [
+
+							{	label:"Population by the millions", 
+								backgroundColor:"rgba(192,0,0,1)",
+								data:[8.53,3.97,2.7,2.3,1.62,1.56],
+							}
+
+						],
+
+					},
+
+					options: {
+
+						scales:{
+							yAxes: [{
+								gridLines: {
+									display:false,
+								},
+							}],
+							xAxes: [{
+								gridLines: {
+									display:false,
+								},
+							}],
+						},
+					},					
+				});
+			</script> 
+
+		</div>
+		<div class="middle">
+			<div class="left">
+				<h2>IN PHILADELPHIA...</h2>
+				<p>The Philadelphia Inquirer, unfortunately, had the least representative newsroom for Black residents at -31 percent. The paper with the closest number was the Chicago Tribune, which underrepresented Black people by -24 percent.<br>
+				<br>Only two papers overrepresented white people more than the Philadelphia Inquirer. The Houston Chronicle did so by 51 percent, the Chicago Tribune by 49 percent and the Philadelphia Inquirer by 46 percent.</p>
+				<p>The Inquirer, like three other major U.S. newspapers, only overrepresented two groups: men and white people. The only other group overrepresented at any of the six major publications was Asian people.</p>
+			</div>	
+			<div class="right">
+				<img src="img/PhiladelphiaInquirer.svg"></img>
+			</div>
+		</div>
+		<div class="bottom">
+			<br><h2><center>See how well the five other biggest cities in the U.S. represent their audiences:</center></h2><br>
+			<div class="news-graphic">
+				<center><img src="img/NewYorkTimes.svg"></center>
+				<span class="total"><center><p><i>The New York Times overrepresented white people by the smallest margin, though The Arizona Republic is close at 21 percent. It’s also tied with the Houston Chronicle for overrepresenting men by the smallest amount.</i></p></center></span>
+			</div>
+			<div class="news-graphic">
+				<center><img src="img/LosAngelesTimes-04.svg"></center>
+				<span class="total"><center><p><i>Out of the papers in the six most-populated U.S. cities, the Los Angeles Times was the closest to properly representing how many Black people live in its city. It also had the same percentage of Asian people working in its newsroom as the demographics of the city.</i></p></center></span>
+			</div> 
+			<div class="news-graphic">
+				<center><img src="img/ChicagoTribune.svg"></center>
+				<span class="total"><center><p><i>The only major U.S. newspaper that overrepresented white people in its newsroom was the Houston Chronicle, and the only other group it overrepresented was men.</i></p></center></span>
+			</div>
+			<div class="news-graphic">
+				<center><img src="img/HoustonChronicle-05.svg"></img></center>
+				<span class="total"><center><p><i>The Houston Chronicle overrepresented white people in its newsroom by a larger margin than the 5 other major U.S. newspapers. Though, it tied the New York Times for underrepresenting women by the smallest margin at -8 percent. Women were not overrepresented in any of the six newsrooms.</i></p></center></span>
+			</div>
+			<div class="news-graphic">
+				<center><img src="img/ArizonaRepublic.svg"></center>
+				<span class="total"><center><p><i>The Arizona Republic was second to being the closest to properly representing how many Black people live in its city. The Los Angeles Times underrepresented Black people by -1 percent, while The Arizona Republic was three points away at -4 percent.</i></p></center></span>
+			</div>
+		</div>
+			
+</body>
