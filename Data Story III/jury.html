@@ -1,0 +1,242 @@
+<head>
+	<title>Data Story III</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	
+	<style>
+
+    @font-face {
+      font-family: "BEBAS";
+      src:url(fonts/BEBAS.ttf); 
+    }
+
+    @font-face {
+      font-family: "Roboto-Regular";
+      src:url(fonts/Roboto-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: "Roboto-Medium";
+      src:url(fonts/Roboto-Medium.ttf);
+    }
+
+    ellipse:hover {fill:#A2A39D;}
+    .juror-description {display:none;}
+    
+    h1 {
+      font-family:"BEBAS";
+      src:url(fonts/BEBAS.ttf);
+      font-size: 50px;
+    }
+
+     h2 {
+      font-family:"Roboto-Medium";
+      src:url(fonts/Roboto-Medium.ttf)
+    }
+
+    p {
+      font-family: "Roboto-Regular";
+      src:url(fonts/Roboto-Regular.ttf);
+    }
+  
+	</style>
+
+<script>
+  $(document).ready(function() {
+
+      $(".juror").click(function() {$(".juror.active").removeClass("active"); $(this).addClass("active"); });
+
+      // $(".nationwide-btn").click(function() {$(".card").hide(); $("#general").show(); $(".juror.active").removeClass("active");});
+
+      $(".juror").on("click", function(){
+        $(".juror-description").hide();
+        $($(this).data("target")).show();
+      });
+
+    });
+</script>
+
+</head>
+
+<body>
+	
+	<div class="description">
+    <center><h1>“THE ACCUSED SHALL ENJOY THE RIGHT TO A SPEEDY AND PUBLIC TRIAL BY AN IMPARTIAL JURY OF THE STATE AND DISTRICT”</h1></center>
+    <center><p>In the Sixth Amendment, it is made law that any person accused of a crime will be treated fairly by the United States judicial system. <br> Bill Cosby, a former esteemed trustee of Temple University, was recently convicted on three counts of aggravated indecent assault for the sexual assault of Andrea Constand, a former university employee. Some criticized this conviction as unfair.</center></p>
+    <center><h2>Let's break down the racial and gender makeup of the 12 jurors that convicted him.</h2></center>
+  </div><br>
+
+  <div class=container><center>
+    <div class="jury">
+      <svg height="140" width="120" class="juror" data-target="#juror-1">
+        <ellipse cx="50" cy="50" rx="50" ry="50" class="black"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#juror-2">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#juror-3">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#juror-4">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#juror-5">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#juror-6">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#juror-7">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#juror-8">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#juror-9">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#juror-10">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#juror-11">
+          <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#juror-12">
+          <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+  
+    </div>
+  
+  </center></div>
+
+  <div class="juror-description" id="general">General Description</div>
+  <div class="juror-description" id="juror-1">
+    <center><p>One juror is a Black man.</p></center>
+  </div>
+  <div class="juror-description" id="juror-2">
+    <center><p>One juror is a Black woman.</p></center>
+  </div>
+  <div class="juror-description" id="juror-3">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+  <div class="juror-description" id="juror-4">
+    <center><p>This juror, like three others, is a white woman.</p></center>
+  </div>
+  <div class="juror-description" id="juror-5">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+  <div class="juror-description" id="juror-6">
+    <center><p>This juror, like three others, is a white woman.</p></center>
+  </div>
+  <div class="juror-description" id="juror-7">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+  <div class="juror-description" id="juror-8">
+    <center><p>This juror, like three others, is a white woman.</p></center>
+  </div>
+  <div class="juror-description" id="juror-9">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+  <div class="juror-description" id="juror-10">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+  <div class="juror-description" id="juror-11">
+    <center><p>This juror, like three others, is a white woman.</p></center>
+  </div>
+  <div class="juror-description" id="juror-12">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+
+  <div>
+    <center><p>The media and judicial system of Montgomery County, in which Cosby committed the crime and was convicted, are still battling over releasing the names of the jury that convicted the American icon. But more information on the 12 jurors that deliberated for more than 53 hours in June 2017 about Cosby's guilt or innocence can be garnered. A mistrial caused by a hung jury was eventually declared.</p></center>
+  </div>
+
+    <div class=container><center>
+    <div class="secondjury">
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-1">
+        <ellipse cx="50" cy="50" rx="50" ry="50" class="black"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-2">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-3">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-4">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-5">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-6">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-7">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-8">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-9">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-10">
+        <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-11">
+          <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+      <svg height="140" width="120" class="juror" data-target="#otherjuror-12">
+          <ellipse cx="50" cy="50" rx="50" ry="50"></ellipse>
+      </svg>
+  
+    </div>
+
+   </center></div>
+
+  <div class="juror-description" id="general">General Description</div>
+  <div class="juror-description" id="otherjuror-1">
+    <center><p>One juror is a Black man.</p></center>
+  </div>
+  <div class="juror-description" id="otherjuror-2">
+    <center><p>One juror is a Black woman.</p></center>
+  </div>
+  <div class="juror-description" id="otherjuror-3">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+  <div class="juror-description" id="otherjuror-4">
+    <center><p>This juror, like three others, is a white woman.</p></center>
+  </div>
+  <div class="juror-description" id="otherjuror-5">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+  <div class="juror-description" id="otherjuror-6">
+    <center><p>This juror, like three others, is a white woman.</p></center>
+  </div>
+  <div class="juror-description" id="otherjuror-7">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+  <div class="juror-description" id="otherjuror-8">
+    <center><p>This juror, like three others, is a white woman.</p></center>
+  </div>
+  <div class="juror-description" id="otherjuror-9">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+  <div class="juror-description" id="otherjuror-10">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+  <div class="juror-description" id="otherjuror-11">
+    <center><p>This juror, like three others, is a white woman.</p></center>
+  </div>
+  <div class="juror-description" id="otherjuror-12">
+    <center><p>This juror, like five others, is a white man.</p></center>
+  </div>
+
+  <center><p>If this jury looks the same as the first — it's because they are. Amazingly, the jury that convicted Cosby had the same racial and gender makeup as the one that ended in a mistrial. However, since then, reports have emerged that 10 of the 12 jurors in the mistrial said they would have convicted Cosby.</p></center>
+
+  <center><div>
+    <center><h2>Why break down the two juries that each spent hours considering the guilt of Cosby?</h2></center>
+    <center><p>A 2012 study in The Quarterly Journal of Economics found that juries with no Black members are more likely to convict Black defendants than those with Black members.</p></center>
+    <center><img src="img/racialbreakdown.png"></center>
+  </div></center>
+
+</body>
